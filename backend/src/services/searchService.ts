@@ -7,6 +7,7 @@ type TMDBSearchResult = {
   title: string;
   poster_path: string;
   release_date: string;
+  overview: string;
 };
 
 export const searchService = async (query: string): Promise<ISearch[]> => {
@@ -31,10 +32,9 @@ export const searchService = async (query: string): Promise<ISearch[]> => {
     }
 
     const data = await response.json();
-    const results: ISearch[] = data.results.map((item: TMDBSearchResult) => ({
+    const results: ISearch[] = data.results.map((item: any) => ({
       id: item.id,
       title: item.title,
-      poster_path: item.poster_path,
       release_date: item.release_date,
     }));
     const redisSet = await redisClient.set(

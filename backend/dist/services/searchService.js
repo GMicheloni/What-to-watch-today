@@ -20,7 +20,6 @@ export const searchService = async (query) => {
         const results = data.results.map((item) => ({
             id: item.id,
             title: item.title,
-            poster_path: item.poster_path,
             release_date: item.release_date,
         }));
         const redisSet = await redisClient.set(`search:${query}`, JSON.stringify(results), {
