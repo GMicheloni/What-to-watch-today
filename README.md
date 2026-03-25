@@ -39,12 +39,9 @@ External APIs
 - TMDB API
 
 ## Architecture
-Frontend
-   ↓
-Express API
-   ↓
-Services Layer
-   ↓
-TMDB API
-Redis Cache
-LLM (Ollama)
+Frontend → Express API → Services Layer → External Services
+
+External Services:
+- TMDB API
+- Redis Cache
+- LLM (Ollama)
