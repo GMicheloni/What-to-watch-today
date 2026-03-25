@@ -1,5 +1,11 @@
-# AI Movie Recommendation System
+# 🎬AI Movie Recommendation System
 
+## Demo
+![Finding](./assets/gifs/finding.gif)
+![Detail](./assets/gifs/detail.gif)
+![Recommendations](./assets/gifs/recommendations.gif)
+
+## About the Project
 A full-stack movie recommendation application that uses an LLM to suggest movies based on user preferences.
 Users can select movies they liked and receive AI-powered recommendations with explanations.
 AI recommendations are generated using a local LLM via Ollama.
@@ -42,10 +48,3 @@ Services Layer
 TMDB API
 Redis Cache
 LLM (Ollama)
-
-## Screenshots
-![Finding](./assets/gifs/finding.gif)
-![Detail](./assets/gifs/detail.gif)
-![Recommendations](./assets/gifs/recommendations.gif)
-
-## Gifs
